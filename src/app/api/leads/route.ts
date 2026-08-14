@@ -4,7 +4,7 @@
  */
 import { NextRequest, NextResponse } from 'next/server';
 
-const BACKEND_URL = process.env.BACKEND_URL ?? 'http://localhost:3000';
+const BACKEND_URL = process.env.BACKEND_URL ?? 'http://13.235.245.137:3000';
 
 export async function POST(req: NextRequest) {
   let body: unknown;
