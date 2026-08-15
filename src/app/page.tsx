@@ -116,8 +116,9 @@ export default function Home() {
         setServerFile(data.file);
         setContacts({});
       }
-    } catch {
-      setError('Network error. Is the frontend able to reach its API route?');
+    } catch (err) {
+      const detail = err instanceof Error ? err.message : String(err);
+      setError(`Network error reaching /api/leads (${detail}). Is the frontend able to reach its API route?`);
     } finally {
       setLoading(false);
       setHasRun(true);
