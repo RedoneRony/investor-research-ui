@@ -179,10 +179,10 @@ export default function Home() {
         </div>
 
         <div className="run-options">
-          <label className="toggle">
+          {/* <label className="toggle">
             <input type="checkbox" checked={enrich} onChange={(e) => setEnrich(e.target.checked)} />
             Find published emails while searching (slower)
-          </label>
+          </label> */}
           <div className="range-input">
             <span className="range-label">Target band ($M)</span>
             <input
